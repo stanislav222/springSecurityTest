@@ -1,3 +1,6 @@
+create schema simple_app;
+
+
 create table main_users
 (
     id bigint auto_increment,
