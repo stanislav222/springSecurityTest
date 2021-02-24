@@ -1,5 +1,18 @@
 create schema simple_app;
 
+create table test_user
+(
+    id bigint auto_increment,
+    user_name varchar(255) not null,
+    tariff varchar(50) not null,
+    balance bigint not null,
+    constraint test_users_pk
+        primary key (id)
+);
+
+INSERT test_user(user_name, tariff, balance) VALUES ('6231999531@login', 'SimpleTariff', 22222222);
+INSERT test_user(user_name, tariff, balance) VALUES ('1231313131@login', 'TariffPlus', 1313123);
+INSERT test_user(user_name, tariff, balance) VALUES ('2312363531@login', 'TariffPlus', 6666666);
 
 create table main_users
 (
